@@ -1,0 +1,54 @@
+site_name: Maths & Physics DB
+
+copyright: Copyright &copy; 2022 Sacha Ployet
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: black  
+    accent: red
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+
+nav:
+  - Lessons:
+    - lessons/index.md
+    - Mechanics I: lessons/chapter-1.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  
+extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/void
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

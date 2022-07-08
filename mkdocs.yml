@@ -46,7 +46,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/void
+      link: https://twitter.com/qcdvoid
 
 extra_javascript:
   - javascripts/mathjax.js
